@@ -31,7 +31,7 @@ export default function Home() {
               {/* Segunda row */}
               <div className="flex flex-wrap justify-between mt-4">
                 {images.map((img, i) => (
-                  <div key={i} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 xl:w-1/10 h-10vh md:max-h-16 m-4" style={{"textAlign": "-webkit-center"}}>
+                  <div key={i} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 xl:w-1/10 h-10vh md:max-h-16 m-4 text-center">
                     <Image
                     src={`/media/clientes/${img}`}
                     alt={img}
