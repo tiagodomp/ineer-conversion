@@ -15,9 +15,11 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v4
         with:
-          submodules: true
+          node-version: 'lts/Hydrogen'
+      - uses: actions/checkout@v4
+        with:
           lfs: false
       - name: Build And Deploy
         id: builddeploy
