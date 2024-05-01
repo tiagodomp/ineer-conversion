@@ -1,7 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export'
-
+  images: {
+    remotePatterns: [{
+        protocol: "https",
+        hostname: "nitrofilesystem.blob.core.windows.net",
+        port: "",
+        pathname: "/**",
+      },
+    ],
+  },
 };
 
 export default nextConfig;
